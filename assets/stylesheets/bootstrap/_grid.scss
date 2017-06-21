@@ -48,12 +48,22 @@
 @include make-grid-columns;
 
 
+// Extra extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xxs);
+
+
 // Extra small grid
 //
 // Columns, offsets, pushes, and pulls for extra small devices like
 // smartphones.
 
-@include make-grid(xs);
+@media (min-width: $screen-xs-min) {
+  @include make-grid(xs);
+}
 
 
 // Small grid
